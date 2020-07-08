@@ -1,0 +1,359 @@
+:root{
+    --off-white: hsl(240, 0%, 96%);
+    --green-color: hsl(165, 86%, 42%);
+    --orange: hsl(36, 94%, 65%);
+    --light-dark: hsl(204, 32%, 29%);
+    --ligter-dark:hsl(300, 8%, 51%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  button{
+      border-style: none;
+      padding: 10px;
+      background-color: var(--off-white);
+  }
+
+.profile-image{
+    background: url('../Images/mobile-background.png') no-repeat;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    background-size: cover;
+}
+
+img{
+    border: 5px solid whitesmoke;
+    width: 100%;
+}
+
+.desktop-image{
+    display: none;
+}
+.profile-image h1{
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.profile-image p{
+    background-color: whitesmoke;
+    color: var(--ligter-dark);
+    text-align: center;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.details{
+    padding: 10%;
+}
+
+.link{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-dark);
+}
+.link a{
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--ligter-dark);
+}
+
+.link span{
+    color: var(--orange);
+}
+
+.link i{
+    margin-right: 6px;
+}
+
+nav{
+    border-bottom: 5px solid var(--green-color);
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    margin-top: 40px;
+}
+nav p{
+    padding:10px;
+    text-align: center;
+
+}
+nav li{
+    list-style-type: none;
+    padding: 10px;
+    margin-right: 3%;
+    background-color: var(--light-dark);
+    color: #fff;
+    
+}
+
+@media screen and (min-width: 357px){
+    nav li{
+        margin-right: 10%;
+    }
+}
+
+.skills p{
+    font-size: 14px;
+    color: var(--ligter-dark);
+    margin: 20px 0 40px 0;
+}
+
+
+.media-handle h3{
+    font-size: 18px;
+}
+
+.media-handle a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.media-handle i{
+    border: 1px solid;
+    padding: 20px;
+    margin: 15px 10px 0 0;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+@media screen and (min-width:768px) {
+
+    body{
+        display: flex;
+    }
+
+    .profile-image{
+        background: url('../Images/Desktop-background.png') no=repeat;
+        background-size: cover;
+    }
+
+    .mobile-image{
+        display: none;
+    }
+    
+    .desktop-image{
+        border: 9px solid whitesmoke;
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    img{
+        border: none
+    }
+    
+    .profile-image h1{
+            position: absolute;
+            right: 10%;
+            top:16%;
+            font-size: 30px;
+        }
+
+    
+    .profile-image p{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .details{
+        position: relative;
+        margin-left: 50px;
+        padding-right: inherit;
+        padding-bottom: inherit;
+        padding: 10px;
+        width: 50%;
+    }
+    
+    .link{
+        text-align: right;
+        border: none; 
+    }
+    .link a{
+        font-size: 16px;
+    }
+  
+    
+    .skills p{
+        font-size: 20px;
+    }
+    
+    .profile-image h1{
+        font-size: 28px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .skills{
+        margin-top: 120px;
+    }
+
+    nav{
+        padding-top: 0;
+    }
+
+    .media-handle h3{
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .desktop-image{
+        border: 9px solid whitesmoke;
+        display: block;
+        margin-top: 50px;
+    }
+    
+    img{
+        border: none
+    }
+    
+    .profile-image h1{
+            position: absolute;
+            right: 17%;
+            top:16%;
+            left: 34%;
+            font-size: 35px;
+        }
+    
+    .profile-image p{
+        font-size: 18px;
+    }
+    
+    .details{
+        position: relative;
+        margin-left: 50px;
+        padding: 10px;
+        width: 55%;
+    }
+    
+    
+    .link a{
+        font-size: 18px;
+    }
+  
+    
+    .skills p{
+        font-size: 28px;
+    }
+    
+    .profile-image h1{
+        font-size: 30px;
+    }
+
+    .skills{
+        margin-top: 130px;
+    }
+
+    /* .media-handle h3{
+        font-size: 28px;
+    } */
+
+    .media-handle i{
+        font-size: 28px;
+        width: 65px;
+        height: 65px;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+
+    .desktop-image{
+        margin-top: 50px;
+        width: 50%;
+    }
+   
+    .profile-image{
+        width: 30%;
+    }
+    .profile-image h1{
+            position: absolute;
+            right:15%;
+            top:10%;
+            left: 5%;
+            font-size: 30px;
+        }
+
+        .details{
+            width: 65%;
+            margin-left: 50px;
+        }
+
+        nav li{
+            font-size: 30px;
+            padding: 15px;
+        }
+
+    
+    .profile-image p{
+        font-size: 22px;
+        width: 50%;
+    }
+    
+    .link a{
+        font-size: 22px;
+    }
+  
+    
+    .skills p{
+        font-size: 28px;
+    }
+    
+    .profile-image h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:2560px) {
+
+    .desktop-image{
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    .profile-image{
+        background-size: 100%;
+    }
+
+    .profile-image h1{
+        font-size: 50px;
+    }
+
+    .profile-image p{
+        font-size: 40px;
+        
+    }
+
+    nav li{
+        margin-right: 5%;
+    }
+
+    .skills{
+        margin-top: 250px;
+    }
+}
