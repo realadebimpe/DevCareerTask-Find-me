@@ -13,12 +13,12 @@
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: rgb(34, 33, 33);
     color: white;
 }
 
 button {
-    border-style: none;
+    border: none;
     padding: 10px;
     color: var(--orange);
     font-size: 18px;
@@ -32,23 +32,31 @@ button {
     background-size: cover;
 }
 
-img {
+.mobile-image{
+    width:100%
+}
+
+h1 .profile-title {
     border: 5px solid whitesmoke;
     width: 100%;
+}
+
+span.profile-name {
+    color: white;
 }
 
 .desktop-image {
     display: none;
 }
 
-.profile-image h1 {
+h1.profile-title {
     font-size: 28px;
     text-align: center;
     padding: 20px;
     color: #fff;
 }
 
-.profile-image p {
+p.profile-skill {
     background-color: whitesmoke;
     color: var(--ligter-dark);
     text-align: center;
@@ -65,7 +73,6 @@ img {
 /* Devcareer-signup-link */
 
 .link {
-    text-align: center;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--light-dark);
 }
@@ -88,7 +95,6 @@ img {
 
 nav {
     border-bottom: 5px solid var(--green-color);
-    padding: 20px;
 }
 
 nav ul {
@@ -99,6 +105,7 @@ nav ul {
 nav p {
     padding: 10px;
     text-align: center;
+    
 }
 
 nav li {
@@ -107,19 +114,12 @@ nav li {
     margin-right: 3%;
     background-color: var(--light-dark);
     color: #fff;
-
-}
-
-@media screen and (min-width: 357px) {
-    nav li {
-        margin-right: 10%;
-    }
+    margin-bottom: 20px;
 }
 
 
 .skills p {
     font-size: 14px;
-    color: var(--ligter-dark);
     margin: 20px 0 40px 0;
 }
 
@@ -185,20 +185,22 @@ nav li {
         width: 85%;
     }
 
-    img {
-        border: none
+    h1.profile-title{
+        border: none;
+        display: none;
     }
 
-    .profile-image h1 {
-        position: absolute;
-        right: 6%;
-        top: 12%;
+    h1.profile-image {
         font-size: 30px;
         color: #000;
     }
 
+    span.profile-name{
+        color: rgb(98, 88, 88);
+    }
+
     .profile-image p {
-        font-size: 18px;
+        font-size: 24px;
         width: 85%;
         margin: 0 auto;
         margin-top: 20px;
@@ -206,12 +208,11 @@ nav li {
     }
 
     .details {
-        position: relative;
         margin-left: 50px;
         padding-right: inherit;
         padding-bottom: inherit;
         padding: 10px;
-        width: 50%;
+        width: 80%;
     }
 
     .link {
@@ -223,6 +224,9 @@ nav li {
         font-size: 16px;
     }
 
+    span.profile-name{
+        font-size: 35px;
+    }
 
     .skills p {
         font-size: 20px;
@@ -250,23 +254,8 @@ nav li {
         border: none
     }
 
-    .profile-image h1 {
-        position: absolute;
-        right: 17%;
-        top: 16%;
-        left: 34%;
-        font-size: 35px;
-    }
-
     .profile-image p {
         font-size: 18px;
-    }
-
-    .details {
-        position: relative;
-        margin-left: 50px;
-        padding: 10px;
-        width: 55%;
     }
 
     .link a {
@@ -296,25 +285,13 @@ nav li {
 
 @media screen and (min-width:1440px) {
 
-    .profile-image h1 {
-        position: absolute;
-        right: 10%;
-        top: 10%;
-        left: 5%;
-    }
-
-    .details {
-        width: 65%;
-        margin-left: 50px;
-    }
-
     nav li {
         font-size: 30px;
         padding: 12px;
     }
 
     .profile-image p {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .link a {
@@ -324,33 +301,21 @@ nav li {
     .skills p {
         font-size: 28px;
     }
-
-    .profile-image h1 {
-        font-size: 35px;
-        right: 20%;
-        top: 14%;
-    }
+.media-handle h3{
+    font-size: 35px;
+}
 }
 
 @media screen and (min-width:2560px) {
 
-    .desktop-image {
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-    }
-
-    .profile-image {
-        background-size: 100%;
-    }
-
     .profile-image h1 {
         font-size: 50px;
+        right:18%;
+        top: 18%;
     }
 
     .profile-image p {
-        font-size: 40px;
+        font-size: 30px;
 
     }
 
