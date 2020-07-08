@@ -20,6 +20,7 @@
 button {
     border-style: none;
     padding: 10px;
+    color: var(--orange);
     background-color: var(--off-white);
 }
 
