@@ -1,12 +1,12 @@
-:root{
+:root {
     --off-white: hsl(240, 0%, 96%);
     --green-color: hsl(165, 86%, 42%);
     --orange: hsl(36, 94%, 65%);
     --light-dark: hsl(204, 32%, 29%);
-    --ligter-dark:hsl(300, 8%, 51%);
+    --ligter-dark: hsl(300, 8%, 51%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,36 +15,38 @@
 .dark-mode {
     background-color: black;
     color: white;
-  }
-  button{
-      border-style: none;
-      padding: 10px;
-      background-color: var(--off-white);
-  }
+}
 
-.profile-image{
+button {
+    border-style: none;
+    padding: 10px;
+    background-color: var(--off-white);
+}
+
+.profile-image {
     background: url('../Images/mobile-background.png') no-repeat;
     padding-bottom: 15px;
     margin-bottom: 20px;
     background-size: cover;
 }
 
-img{
+img {
     border: 5px solid whitesmoke;
     width: 100%;
 }
 
-.desktop-image{
+.desktop-image {
     display: none;
 }
-.profile-image h1{
+
+.profile-image h1 {
     font-size: 28px;
     text-align: center;
     padding: 20px;
     color: #fff;
 }
 
-.profile-image p{
+.profile-image p {
     background-color: whitesmoke;
     color: var(--ligter-dark);
     text-align: center;
@@ -54,75 +56,83 @@ img{
     margin-bottom: 10px;
 }
 
-.details{
+.details {
     padding: 10%;
 }
 
-.link{
+/* Devcareer-signup-link */
+
+.link {
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--light-dark);
 }
-.link a{
+
+.link a {
     text-decoration: none;
     font-size: 13px;
     color: var(--ligter-dark);
 }
 
-.link span{
+.link span {
     color: var(--orange);
 }
 
-.link i{
+.link i {
     margin-right: 6px;
 }
 
-nav{
+/* Skills */
+
+nav {
     border-bottom: 5px solid var(--green-color);
     padding: 20px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     margin-top: 40px;
 }
-nav p{
-    padding:10px;
-    text-align: center;
 
+nav p {
+    padding: 10px;
+    text-align: center;
 }
-nav li{
+
+nav li {
     list-style-type: none;
     padding: 10px;
     margin-right: 3%;
     background-color: var(--light-dark);
     color: #fff;
-    
+
 }
 
-@media screen and (min-width: 357px){
-    nav li{
+@media screen and (min-width: 357px) {
+    nav li {
         margin-right: 10%;
     }
 }
 
-.skills p{
+
+.skills p {
     font-size: 14px;
     color: var(--ligter-dark);
     margin: 20px 0 40px 0;
 }
 
+/* Social-media-handle */
 
-.media-handle h3{
+.media-handle h3 {
     font-size: 18px;
 }
 
-.media-handle a{
+.media-handle a {
     color: inherit;
     text-decoration: none;
 }
 
-.media-handle i{
+.media-handle i {
     border: 1px solid;
     padding: 20px;
     margin: 15px 10px 0 0;
@@ -132,50 +142,68 @@ nav li{
     border-radius: 50%;
 }
 
+#twitter {
+    color: #1a91da
+}
+
+#facbook {
+    color: #505F98;
+}
+
+#instagram {
+    color: #c32aa3;
+}
+
+#linkedin {
+    color: #006097;
+}
+
 @media screen and (min-width:768px) {
 
-    body{
+    body {
         display: flex;
     }
 
-    .profile-image{
-        background: url('../Images/Desktop-background.png') no=repeat;
+    .profile-image {
+        background: url('../Images/Desktop-background.png') no-repeat;
         background-size: cover;
+        height: 100vh;
+        margin-bottom: 0;
     }
 
-    .mobile-image{
+    .mobile-image {
         display: none;
     }
-    
-    .desktop-image{
+
+    .desktop-image {
         border: 9px solid whitesmoke;
         display: block;
-        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 85%;
     }
-    
-    img{
+
+    img {
         border: none
     }
-    
-    .profile-image h1{
-            position: absolute;
-            right: 10%;
-            top:16%;
-            font-size: 30px;
-        }
 
-    
-    .profile-image p{
-        width: 50%;
+    .profile-image h1 {
+        position: absolute;
+        right: 6%;
+        top: 12%;
+        font-size: 30px;
+        color: #000;
+    }
+
+    .profile-image p {
+        font-size: 18px;
+        width: 85%;
         margin: 0 auto;
         margin-top: 20px;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
-    
-    .details{
+
+    .details {
         position: relative;
         margin-left: 50px;
         padding-right: inherit;
@@ -183,35 +211,31 @@ nav li{
         padding: 10px;
         width: 50%;
     }
-    
-    .link{
+
+    .link {
         text-align: right;
-        border: none; 
-    }
-    .link a{
-        font-size: 16px;
-    }
-  
-    
-    .skills p{
-        font-size: 20px;
-    }
-    
-    .profile-image h1{
-        font-size: 28px;
-        text-align: center;
-        padding: 20px;
+        border: none;
     }
 
-    .skills{
+    .link a {
+        font-size: 16px;
+    }
+
+
+    .skills p {
+        font-size: 20px;
+    }
+
+
+    .skills {
         margin-top: 120px;
     }
 
-    nav{
+    nav {
         padding-top: 0;
     }
 
-    .media-handle h3{
+    .media-handle h3 {
         font-size: 20px;
     }
 
@@ -220,58 +244,47 @@ nav li{
 
 @media screen and (min-width:1024px) {
 
-    .desktop-image{
-        border: 9px solid whitesmoke;
-        display: block;
-        margin-top: 50px;
-    }
-    
-    img{
+    img {
         border: none
     }
-    
-    .profile-image h1{
-            position: absolute;
-            right: 17%;
-            top:16%;
-            left: 34%;
-            font-size: 35px;
-        }
-    
-    .profile-image p{
+
+    .profile-image h1 {
+        position: absolute;
+        right: 17%;
+        top: 16%;
+        left: 34%;
+        font-size: 35px;
+    }
+
+    .profile-image p {
         font-size: 18px;
     }
-    
-    .details{
+
+    .details {
         position: relative;
         margin-left: 50px;
         padding: 10px;
         width: 55%;
     }
-    
-    
-    .link a{
+
+    .link a {
         font-size: 18px;
     }
-  
-    
-    .skills p{
+
+
+    .skills p {
         font-size: 28px;
     }
-    
-    .profile-image h1{
+
+    .profile-image h1 {
         font-size: 30px;
     }
 
-    .skills{
+    .skills {
         margin-top: 130px;
     }
 
-    /* .media-handle h3{
-        font-size: 28px;
-    } */
-
-    .media-handle i{
+    .media-handle i {
         font-size: 28px;
         width: 65px;
         height: 65px;
@@ -281,79 +294,69 @@ nav li{
 
 @media screen and (min-width:1440px) {
 
-    .desktop-image{
-        margin-top: 50px;
-        width: 50%;
+    .profile-image h1 {
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        left: 5%;
     }
-   
-    .profile-image{
-        width: 30%;
+
+    .details {
+        width: 65%;
+        margin-left: 50px;
     }
-    .profile-image h1{
-            position: absolute;
-            right:15%;
-            top:10%;
-            left: 5%;
-            font-size: 30px;
-        }
 
-        .details{
-            width: 65%;
-            margin-left: 50px;
-        }
-
-        nav li{
-            font-size: 30px;
-            padding: 15px;
-        }
-
-    
-    .profile-image p{
-        font-size: 22px;
-        width: 50%;
+    nav li {
+        font-size: 30px;
+        padding: 12px;
     }
-    
-    .link a{
+
+    .profile-image p {
         font-size: 22px;
     }
-  
-    
-    .skills p{
+
+    .link a {
+        font-size: 22px;
+    }
+
+    .skills p {
         font-size: 28px;
     }
-    
-    .profile-image h1{
-        font-size: 30px;
+
+    .profile-image h1 {
+        font-size: 35px;
+        right: 20%;
+        top: 14%;
     }
 }
 
 @media screen and (min-width:2560px) {
 
-    .desktop-image{
+    .desktop-image {
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         width: 60%;
     }
 
-    .profile-image{
+    .profile-image {
         background-size: 100%;
     }
 
-    .profile-image h1{
+    .profile-image h1 {
         font-size: 50px;
     }
 
-    .profile-image p{
+    .profile-image p {
         font-size: 40px;
-        
+
     }
 
-    nav li{
+    nav li {
         margin-right: 5%;
     }
 
-    .skills{
+    .skills {
         margin-top: 250px;
     }
 }
