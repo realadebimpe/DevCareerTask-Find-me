@@ -18,7 +18,7 @@
 }
 
 button {
-    border: none;
+    border: 1px solid var(--off-white);
     padding: 10px;
     color: var(--orange);
     font-size: 18px;
@@ -36,24 +36,20 @@ button {
     width:100%
 }
 
-h1 .profile-title {
-    border: 5px solid whitesmoke;
+.profile-title {
     width: 100%;
+        font-size: 28px;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
 }
 
-span.profile-name {
-    color: white;
+.profile-name {
+    display: none;
 }
 
 .desktop-image {
     display: none;
-}
-
-h1.profile-title {
-    font-size: 28px;
-    text-align: center;
-    padding: 20px;
-    color: #fff;
 }
 
 p.profile-skill {
@@ -64,6 +60,7 @@ p.profile-skill {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .details {
@@ -135,7 +132,7 @@ nav li {
 }
 
 .media-handle i {
-    border: 1px solid;
+    border: 2px solid;
     padding: 20px;
     margin: 15px 10px 0 0;
     width: 55px;
@@ -169,7 +166,7 @@ nav li {
     .profile-image {
         background: url('../Images/Desktop-background.png') no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 100%;
         margin-bottom: 0;
     }
 
@@ -182,11 +179,10 @@ nav li {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 85%;
+        width: 90%;
     }
 
-    h1.profile-title{
-        border: none;
+    .profile-title{
         display: none;
     }
 
@@ -195,8 +191,8 @@ nav li {
         color: #000;
     }
 
-    span.profile-name{
-        color: rgb(98, 88, 88);
+    .profile-name{
+        display: block;
     }
 
     .profile-image p {
